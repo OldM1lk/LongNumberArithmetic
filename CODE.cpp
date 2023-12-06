@@ -2,7 +2,7 @@
  * Выполнил: Чепуштанов Е.П.        *
  * Группа: ПИ-231                   *
  * Блок 4, Лаба 1                   *
- * https://onlinegdb.com/hDFkMeiEo  *
+ * https://onlinegdb.com/Lo13lA46d  *
 *************************************/
 
 #include <iostream>
@@ -36,34 +36,43 @@ int main() {
   cin >> Operation;
   cout << "\n";
   
-  if (Operation == 1) {
-    cout << "Результат: " << num1 + num2;
-  } else if (Operation == 2) {
-    cout << "Результат: " << num1 - num2;
-  } else if (Operation == 3) {
-    cout << "Результат: " << num1 * num2;
-  } else if (Operation == 4) {
-    cout << "Результат: " << num1 / num2;
-  } else if (Operation == 5) {
-    if ( (num1 - num2) > 0 ) {
-      cout << "True";
-    } else {
-      cout << "False";
-    }
-  } else if (Operation == 6) {
-    if ( (num2 - num1) > 0 ) {
-      cout << "True";
-    } else {
-      cout << "False";
-    }
-  } else if (Operation == 7) {
-    if ( (num2 - num1) = 0 ) {
-      cout << "True";
-    } else {
-      cout << "False";
-    }
-  } else {
-    cout << "Вы ввели некорректную процедуру!!!";
+  switch (Operation) {
+    case 1:
+      cout << "Результат: " << num1 + num2;
+      break;
+    case 2:
+      cout << "Результат: " << num1 - num2;
+      break;
+    case 3:
+      cout << "Результат: " << num1 * num2;
+      break;
+    case 4:
+      cout << "Результат: " << num1 / num2;
+      break;
+    case 5:
+      if ( (num1 - num2) > 0 ) {
+        cout << "True";
+      } else {
+        cout << "False";
+      }
+      break;
+    case 6:
+      if ( (num2 - num1) > 0 ) {
+        cout << "True";
+      } else {
+        cout << "False";
+      }
+      break;
+    case 7:
+      if ( (num2 - num1) == 0 ) {
+        cout << "True";
+      } else {
+        cout << "False";
+      }
+      break;
+    default:
+      cout << "Вы ввели некорректную процедуру!!!";
+      break;
   }
   
   return 0;
