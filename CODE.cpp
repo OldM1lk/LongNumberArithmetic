@@ -2,7 +2,7 @@
  * Выполнил: Чепуштанов Е.П.        *
  * Группа: ПИ-231                   *
  * Блок 4, Лаба 1                   *
- * https://onlinegdb.com/UWzPHS3oY  *
+ * https://onlinegdb.com/VsYIzKGwE  *
 *************************************/
 
 #include <iostream>
@@ -29,7 +29,10 @@ int main() {
        << "1. +" << endl
        << "2. -" << endl
        << "3. *" << endl
-       << "4. /" << endl;
+       << "4. /" << endl
+       << "5. >" << endl
+       << "6. <" << endl
+       << "7. =" << endl;
   cin >> Operation;
   cout << "\n";
   
@@ -41,6 +44,24 @@ int main() {
     cout << "Результат: " << Num1 * Num2;
   } else if (Operation == 4) {
     cout << "Результат: " << Num1 / Num2;
+  } else if (Operation == 5) {
+    if ( (Num1 - Num2) > 0 ) {
+      cout << "True";
+    } else {
+      cout << "False";
+    }
+  } else if (Operation == 6) {
+    if ( (Num2 - Num1) > 0 ) {
+      cout << "True";
+    } else {
+      cout << "False";
+    }
+  } else if (Operation == 7) {
+    if ( (Num2 - Num1) = 0 ) {
+      cout << "True";
+    } else {
+      cout << "False";
+    }
   } else {
     cout << "Вы ввели некорректную процедуру!!!";
   }
