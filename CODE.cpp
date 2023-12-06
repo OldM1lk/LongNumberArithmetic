@@ -2,7 +2,7 @@
  * Выполнил: Чепуштанов Е.П.        *
  * Группа: ПИ-231                   *
  * Блок 4, Лаба 1                   *
- * https://onlinegdb.com/VsYIzKGwE  *
+ * https://onlinegdb.com/hDFkMeiEo  *
 *************************************/
 
 #include <iostream>
@@ -14,15 +14,15 @@ using namespace boost::multiprecision;
 int main() {
   setlocale(LC_ALL, "Russian");
   
-  int128_t Num1, Num2;
+  int128_t num1, num2;
   int Operation;
   
   cout << "Введите первое число: ";
-  cin >> Num1;
+  cin >> num1;
   cout << "Введите второе число: ";
-  cin >> Num2;
-  cout << "\nПервое число: " << Num1 << endl
-       << "Второе число: " << Num2 << endl;
+  cin >> num2;
+  cout << "\nПервое число: " << num1 << endl
+       << "Второе число: " << num2 << endl;
   
   cout << "\nКакую процедуру вы хотите совершить?" << endl
        << "(Напишите цифру от 1 до 7)" << endl
@@ -37,27 +37,27 @@ int main() {
   cout << "\n";
   
   if (Operation == 1) {
-    cout << "Результат: " << Num1 + Num2;
+    cout << "Результат: " << num1 + num2;
   } else if (Operation == 2) {
-    cout << "Результат: " << Num1 - Num2;
+    cout << "Результат: " << num1 - num2;
   } else if (Operation == 3) {
-    cout << "Результат: " << Num1 * Num2;
+    cout << "Результат: " << num1 * num2;
   } else if (Operation == 4) {
-    cout << "Результат: " << Num1 / Num2;
+    cout << "Результат: " << num1 / num2;
   } else if (Operation == 5) {
-    if ( (Num1 - Num2) > 0 ) {
+    if ( (num1 - num2) > 0 ) {
       cout << "True";
     } else {
       cout << "False";
     }
   } else if (Operation == 6) {
-    if ( (Num2 - Num1) > 0 ) {
+    if ( (num2 - num1) > 0 ) {
       cout << "True";
     } else {
       cout << "False";
     }
   } else if (Operation == 7) {
-    if ( (Num2 - Num1) = 0 ) {
+    if ( (num2 - num1) = 0 ) {
       cout << "True";
     } else {
       cout << "False";
